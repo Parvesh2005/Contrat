@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup/Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<script src="https://cdn.tailwindcss.com"></script>
+<body class="bg-gray-100">
+    <nav class="py-4" style="background-color:rgb(5, 20, 56);"><ul class="flex">
+        
+        <li class="mx-8" style="color: azure;"><a href="contractin.html"><button>Home</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href="#about-us"><button class="scroll-smooth">About Us</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href="contact-us.html"><button>Contact Us</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href="qna.html"><button>Q/A</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href=""><a href="Query.html"><button>Post A Query</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href="Signin.html"><button>Log In/Sign Up</button></a></li>
+        <li class="mx-72"><div id="google_translate_element"></div>
+
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+            </script>
+            
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></li>
+    </ul></nav>
+    <h2 class="text-3xl text-center my-8">Signup/Login Form</h2>
+    <form action="submit_form.php" method="post" class="bg-white shadow-md rounded px-8 py-6 mx-auto max-w-md">
+        <div class="mb-4">
+            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">1. Name</label>
+            <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight" required>
+        </div>
+
+        <div class="mb-4">
+            <label for="gender" class="block text-gray-700 text-sm font-bold mb-2">2. Gender</label>
+            <select id="gender" name="gender" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+            </select>
+        </div>
+
+        <div class="mb-4">
+            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">3. Email Address</label>
+            <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight" required>
+        </div>
+
+        <div class="mb-6">
+            <label for="address" class="block text-gray-700 text-sm font-bold mb-2">4. Permanent Address</label>
+            <textarea id="address" name="address" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight" required></textarea>
+        </div>
+    </form>
+    <a href="login_success.html"><button class="mx-[675px] my-[25px]">Submit</button></a>
+</body>
+</html>

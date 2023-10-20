@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <nav class="py-4" style="background-color:rgb(5, 20, 56);"><ul class="flex">
+        
+        <li class="mx-8" style="color: azure;"><a href="contractin.html"><button>Home</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href="#about-us"><button class="scroll-smooth">About Us</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href="contact-us.html"><button>Contact Us</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href="qna.html"><button>Q/A</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href=""><a href="Query.html"><button>Post A Query</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href="Signin.html"><button>Log In/Sign Up</button></a></li>
+        <li class="mx-72"><div id="google_translate_element"></div>
+
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+            </script>
+            
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></li>
+    </ul></nav>
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-semibold text-center my-4">Post A Query</h1>
+        <div class="bg-white shadow-md rounded p-4">
+            <form>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-bold mb-2">Email ID</label>
+                    <input type="email" id="email" name="email" class="border rounded w-full py-2 px-3" placeholder="Your Email ID" required>
+                </div>
+                <div class="mb-4">
+                    <label for="query" class="block text-gray-700 font-bold mb-2">Query</label>
+                    <textarea id="query" name="query" class="border rounded w-full py-2 px-3" rows="4" placeholder="Your Query" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer items-center">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

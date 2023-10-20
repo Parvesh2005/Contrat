@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 20px 0;
+        }
+
+        .job-container {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .job-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .job-item:last-child {
+            border-bottom: none;
+        }
+
+        select {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+        }
+
+        .congratulations {
+            display: none;
+            font-size: 24px;
+            color: #007bff;
+            margin: 20px 0;
+        }
+
+        select:focus + .congratulations {
+            display: block;
+        }
+    </style>
+</head>
+<script src="https://cdn.tailwindcss.com"></script>
+<body>
+    <nav class="py-4" style="background-color:rgb(5, 20, 56);"><ul class="flex">
+        
+        <li class="mx-8" style="color: azure;"><a href="contractin.html"><button>Home</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href="#about-us"><button class="scroll-smooth">About Us</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href="contact-us.html"><button>Contact Us</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href="qna.html"><button>Q/A</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href=""><a href="Query.html"><button>Post A Query</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href="Signin.html"><button>Log In/Sign Up</button></a></li>
+        <li class="mx-72"><div id="google_translate_element"></div>
+
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+            </script>
+            
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></li>
+    </ul></nav>
+    <h1>Job Selection</h1>
+    <div class="job-container">
+        <div class="job-item">
+            <div>Job 1</div>
+            <div>$50</div>
+            <select>
+                <option value="job1">Select</option>
+            </select>
+            <div class="congratulations">CONGRATULATIONS YOU GOT THE JOB</div>
+        </div>
+
+        <div class="job-item">
+            <div>Job 2</div>
+            <div>$60</div>
+            <select>
+                <option value="job2">Select</option>
+            </select>
+            <div class="congratulations">CONGRATULATIONS YOU GOT THE JOB</div>
+        </div>
+    </div>
+</body>
+</html>

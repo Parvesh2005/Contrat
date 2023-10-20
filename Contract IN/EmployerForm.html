@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hiring Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        select {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<script src="https://cdn.tailwindcss.com"></script>
+<body>
+    <nav class="py-4" style="background-color:rgb(5, 20, 56);"><ul class="flex">
+        
+        <li class="mx-8" style="color: azure;"><a href="contractin.html"><button>Home</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href="#about-us"><button class="scroll-smooth">About Us</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href="contact-us.html"><button>Contact Us</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href="qna.html"><button>Q/A</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href=""><a href="Query.html"><button>Post A Query</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href="Signin.html"><button>Log In/Sign Up</button></a></li>
+        <li class="mx-72"><div id="google_translate_element"></div>
+
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+            </script>
+            
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></li>
+    </ul></nav>
+    <h2>Employer Hiring Form</h2>
+    <form action="submit_form.php" method="post">
+        <label for="state">1. Which state do you live?</label>
+        <select id="state" name="state">
+            <option value="Bihar">Bihar</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Gujarat">Gujarart</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Madhya-Pradesh">Madhya Pradesh</option>
+            <option value="Uttar-Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="Goa">Goa</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="West-Bengal">West Bengal</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Assam">Assam</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Tamil-Nadu">Tamil Nadu</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Chattisgarh">Chattisgarh</option>
+            <option value="Andhra-Pradesh">Andhra Pradesh</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Himachal-Pradesh">Himachal Pradesh</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Arunachal-Pradesh">Arunachal Pradesh</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Jammu-&-Kashmir">Jammu & Kashmir</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Goa">Goa</option>
+            <option value="Daman-&-Diu">Daman & Diu</option>
+            <option value="Andaman-&-Nicobar-Islands">Andaman & Nicobar Islands</option>
+            <option value="Ladakh">Ladakh</option>
+        </select>
+
+        <br>
+
+        <label for="work">2. What kind of work do you want to hire for?</label>
+        <select id="work" name="work">
+            <option value="software-engineer">Gardener</option>
+            <option value="teacher">Labourer</option>
+            <option value="accountant">House Keeper</option>
+            <option value="accountant">Attendant</option>
+            <option value="accountant">Guard</option>
+        </select>
+
+        <br>
+
+        <label for="workers">3. Number of workers required for your job:</label>
+        <select id="workers" name="workers">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+
+        <br>
+
+        <label for="wage">4. What is the minimum wage you are offering?</label>
+        <select id="wage" name="wage">
+            <option value="20000">₹8000</option>
+            <option value="12000">₹12000</option>
+            <option value="15000">₹15000</option>
+            <option value="20000">₹20000</option>
+        </select>
+
+        <br>
+
+        <label for="outside-state">5. Are you open to workers from outside your state?</label>
+        <select id="outside-state" name="outside-state">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <br>
+
+    </form>
+    <a href="EmployerSubmit.html"><button class="mx-[675px] my-[25px]">Submit</button></a>
+</body>
+</html>

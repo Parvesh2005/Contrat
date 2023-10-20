@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Worker Selection</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <nav class="py-4" style="background-color:rgb(5, 20, 56);"><ul class="flex">
+        
+        <li class="mx-8" style="color: azure;"><a href="contractin.html"><button>Home</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href="#about-us"><button class="scroll-smooth">About Us</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href="contact-us.html"><button>Contact Us</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href="qna.html"><button>Q/A</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href=""><a href="Query.html"><button>Post A Query</button></a></li>
+        <li class="mx-8" style="color: azure;"><a href="Signin.html"><button>Log In/Sign Up</button></a></li>
+        <li class="mx-72"><div id="google_translate_element"></div>
+
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+            </script>
+            
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></li>
+    </ul></nav>
+    <h1 class="text-3xl text-center my-8">Worker Selection</h1>
+    <div class="flex mx-auto max-w-3xl">
+        <div class="w-1/3">
+            <div class="bg-white shadow-md rounded px-4 py-4">
+                <h2 class="text-lg font-semibold mb-4">Workers Matching Your Requirements</h2>
+                <ul>
+                    <li class="mb-4">
+                        <div class="flex items-center justify-between">
+                            <span>John Doe</span>
+                            <span>$20/hr</span>
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer select-button">Select</button>
+                        </div>
+                    </li>
+                    <li class="mb-4">
+                        <div class="flex items-center justify-between">
+                            <span>Jane Smith</span>
+                            <span>$25/hr</span>
+                            <button class="bg-blue-500 hover-bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer select-button">Select</button>
+                        </div>
+                    </li>
+                    <li class="mb-4">
+                        <div class="flex items-center justify-between">
+                            <span>Michael Johnson</span>
+                            <span>$18/hr</span>
+                            <button class="bg-blue-500 hover-bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer select-button">Select</button>
+                        </div>
+                    </li>
+                    <li class="mb-4">
+                        <div class="flex items-center justify-between">
+                            <span>Sarah Brown</span>
+                            <span>$22/hr</span>
+                            <button class="bg-blue-500 hover-bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer select-button">Select</button>
+                        </div>
+                    </li>
+                    <!-- Add more worker names and wages as needed -->
+                </ul>
+            </div>
+        </div>
+        <div class="w-2/3">
+            <div class="bg-white shadow-md rounded px-4 py-4">
+                <div class="text-center text-2xl text-green-500 hidden congratulations-message">CONGRATULATIONS YOU HAVE HIRED</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const selectButtons = document.querySelectorAll(".select-button");
+        const congratulationsMessage = document.querySelector(".congratulations-message");
+
+        selectButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                congratulationsMessage.classList.remove("hidden");
+            });
+        });
+    </script>
+</body>
+</html>
